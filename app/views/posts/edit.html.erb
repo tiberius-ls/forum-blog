@@ -1,0 +1,9 @@
+<h1 style="text-align: center;" class="mt-2">EDIT POST</h1>
+
+<%= render "form", post: @post %>
+
+<br>
+<div class="d-grid gap-2 d-md-flex justify-content-md-center">
+  <%= link_to "Show this post", @post, class: "btn btn-dark me-md-1" %>
+  <%= link_to "Back to posts", posts_path, class: "btn btn-warning" %>
+</div>
