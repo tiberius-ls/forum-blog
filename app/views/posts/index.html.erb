@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+<marquee behavior="" direction="">
+  <h1>Posts</h1>
+</marquee>
+<div class="row align-items-md-stretch" id="posts">
+  <% @posts.each do |post| %>
+    <div class="col-md-6 pt-1">
+      <div class="h-100 p-5 text-dark bg-light rounded-3">
+        <h2><%= render post %></h2>
+        <%= link_to "Show this post", post, class: "btn btn-outline-primary" %>
+      </div>
+    </div>
+  <% end %>
+</div>
+<%= link_to "New post", new_post_path, class: 'btn btn-primary' %>
